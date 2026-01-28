@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Training Institute | Skill India | Digital Skills for Future</title>
+    <meta name="description" content="Professional computer training institute offering job-oriented courses like Tally, ADCA, DCA, Animation, Programming, Digital Marketing, and Typing courses.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0056b3;
+            --primary-dark: #003d82;
+            --secondary: #2d3748;
+            --light: #ffffff;
+            --light-gray: #f8f9fa;
+            --medium-gray: #e9ecef;
+            --dark-gray: #6c757d;
+            --text: #333333;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+            --border-radius: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 3rem;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            width: 70%;
+            height: 4px;
+            background-color: var(--primary);
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        /* Navbar */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--secondary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            bottom: -5px;
+            left: 0;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 180px 0 120px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+            animation: fadeInDown 1s ease;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 1s ease 0.3s both;
+        }
+
+        .tagline {
+            color: #4dabf7;
+            font-weight: 500;
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--light-gray);
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-image {
+            flex: 1;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .about-image:hover img {
+            transform: scale(1.03);
+        }
+
+        /* Courses Section */
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .course-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .course-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .course-card h3 {
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+
+        /* Why Choose Us */
+        .why-us {
+            background-color: var(--light-gray);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature {
+            background-color: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: flex;
+            gap: 60px;
+        }
+
+        .contact-form {
+            flex: 1;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--medium-gray);
+            border-radius: var(--border-radius);
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+        }
+
+        .contact-details {
+            background-color: var(--light-gray);
+            padding: 30px;
+            border-radius: var(--border-radius);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .contact-icon {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .footer-links h4 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        /* Messages */
+        .message {
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .contact-container {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .hero-btns .btn {
+                width: 80%;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            section {
+                padding: 60px 0;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .tagline {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Fade-in animation for sections */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Comp<span>Train</span></a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Computer Training Institute</h1>
+            <div class="tagline">"Skill India | Digital Skills for Future"</div>
+            <p>Empowering students with practical, job-oriented computer skills for the digital age. Learn from industry experts and kickstart your career.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn">Enroll Now</a>
+                <a href="#contact" class="btn btn-secondary">Free Enquiry</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>About Us</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h3>Professional Computer Education for the Digital World</h3>
+                    <p>We are a leading computer training institute committed to providing high-quality, practical education that equips students with the skills needed for today's job market. Our mission is to bridge the gap between academic knowledge and industry requirements.</p>
+                    <p>With a focus on hands-on training, we ensure that students not only learn theoretical concepts but also gain practical experience through real-world projects and simulations.</p>
+                    <p>Our courses are designed by industry experts and are regularly updated to keep pace with the rapidly evolving technology landscape. We offer certificates that are recognized by employers across various sectors.</p>
+                    <a href="#courses" class="btn">Explore Our Courses</a>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Students learning computer skills">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Courses</h2>
+                <p>Choose from a wide range of job-oriented computer courses designed to meet industry demands.</p>
+            </div>
+            <div class="courses-grid">
+                <!-- Course cards will be generated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Why Choose Us</h2>
+                <p>We provide the best learning environment to help you achieve your career goals.</p>
+            </div>
+            <div class="features">
+                <div class="feature fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Experienced Trainers</h3>
+                    <p>Learn from industry professionals with years of practical experience and teaching expertise.</p>
+                </div>
+                <div class="feature fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Practical Learning</h3>
+                    <p>Our curriculum focuses on hands-on training with real-world projects and simulations.</p>
+                </div>
+                <div class="feature fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h3>Affordable Fees</h3>
+                    <p>Quality education at reasonable prices with flexible payment options for everyone.</p>
+                </div>
+                <div class="feature fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certificate Provided</h3>
+                    <p>Get industry-recognized certificates upon successful completion of courses.</p>
+                </div>
+                <div class="feature fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Placement Assistance</h3>
+                    <p>We help you prepare for interviews and connect with potential employers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Get In Touch</h2>
+                <p>Have questions? Contact us today for a free consultation or to enroll in a course.</p>
+            </div>
+            
+            <!-- Form Messages -->
+            <div id="formMessages"></div>
+            
+            <div class="contact-container">
+                <div class="contact-form fade-in">
+                    <!-- Netlify Form -->
+                    <form action="https://formsubmit.co/ajaykumartudu006@gmail.com" method="POST">
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="course">Course Interested In *</label>
+                            <select id="course" name="course" class="form-control" required>
+                                <option value="">Select a course</option>
+                                <option value="Tally (with GST)">Tally (with GST)</option>
+                                <option value="ADCA">ADCA</option>
+                                <option value="DCA">DCA</option>
+                                <option value="Animation">Animation</option>
+                                <option value="Programming Languages">Programming Languages (C, C++, Python, Java)</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Hindi Typing">Hindi Typing</option>
+                                <option value="English Typing">English Typing</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="5"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Submit Enquiry</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info fade-in">
+                    <div class="contact-details">
+                        <h3>Contact Details</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Our Address</h4>
+                                <p>123 Computer Education Street, Tech Park, Bangalore, Karnataka 560001</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Phone Number</h4>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p>ajaykd2023@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                                <p>Sunday: 10:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">CompTrain</div>
+                    <p>Providing quality computer education since 2010. Empowering students with digital skills for a brighter future.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="#courses">Tally (with GST)</a></li>
+                        <li><a href="#courses">ADCA</a></li>
+                        <li><a href="#courses">Programming</a></li>
+                        <li><a href="#courses">Digital Marketing</a></li>
+                        <li><a href="#courses">Typing Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Computer Training Institute. All rights reserved. | Designed for Skill India Initiative</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Courses data
+        const courses = [
+            { name: "Tally (with GST)", icon: "fas fa-file-invoice-dollar" },
+            { name: "ADCA", icon: "fas fa-desktop" },
+            { name: "DCA", icon: "fas fa-computer" },
+            { name: "Animation", icon: "fas fa-film" },
+            { name: "Programming Languages", icon: "fas fa-code" },
+            { name: "Digital Marketing", icon: "fas fa-chart-line" },
+            { name: "Hindi Typing", icon: "fas fa-keyboard" },
+            { name: "English Typing", icon: "fas fa-keyboard" }
+        ];
+
+        // DOM Elements
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        const coursesGrid = document.querySelector('.courses-grid');
+        const enquiryForm = document.getElementById('enquiryForm');
+        const formMessages = document.getElementById('formMessages');
+
+        // Mobile Menu Toggle
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Generate course cards
+        function generateCourseCards() {
+            coursesGrid.innerHTML = '';
+            courses.forEach(course => {
+                const courseCard = document.createElement('div');
+                courseCard.className = 'course-card fade-in';
+                courseCard.innerHTML = `
+                    <div class="course-icon">
+                        <i class="${course.icon}"></i>
+                    </div>
+                    <h3>${course.name}</h3>
+                    <p>Comprehensive training with practical exercises and industry-relevant projects.</p>
+                `;
+                coursesGrid.appendChild(courseCard);
+            });
+        }
+
+        // Form submission handler
+        if (enquiryForm) {
+            enquiryForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Basic validation
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                const course = document.getElementById('course').value;
+                
+                if (!name || !email || !phone || !course) {
+                    showMessage('Please fill all required fields.', 'error');
+                    return;
+                }
+                
+                // Show success message (in a real scenario, this would be handled by Netlify)
+                showMessage('Thank you for your enquiry! We will contact you soon.', 'success');
+                
+                // Reset form
+                enquiryForm.reset();
+                
+                // In a real implementation, Netlify would handle the form submission
+                // Since we're using Netlify Forms with the data-netlify attribute,
+                // the form will work when deployed on Netlify
+                
+                // For demo purposes, we'll simulate a successful submission
+                console.log('Form submitted with data:', { name, email, phone, course });
+            });
+        }
+
+        // Show form messages
+        function showMessage(message, type) {
+            formMessages.innerHTML = `
+                <div class="message ${type}">
+                    ${message}
+                </div>
+            `;
+            formMessages.style.display = 'block';
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                formMessages.style.display = 'none';
+            }, 5000);
+        }
+
+        // Scroll animations
+        function checkScroll() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        // Sticky navbar on scroll
+        function handleStickyNavbar() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            generateCourseCards();
+            
+            // Initial check for scroll animations
+            checkScroll();
+            
+            // Event listeners
+            window.addEventListener('scroll', () => {
+                checkScroll();
+                handleStickyNavbar();
+            });
+        });
+    </script>
+</body>
+</html>
